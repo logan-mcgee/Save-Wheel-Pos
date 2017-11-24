@@ -6,7 +6,7 @@ Citizen.CreateThread(function()
             angle = GetVehicleSteeringAngle(veh)
             veh2 = GetPlayersLastVehicle()
             sped = GetEntitySpeed(veh)
-            Citizen.Wait(150)
+            Citizen.Wait(50)
             if sped < 10 then
                 SetVehicleSteeringAngle(veh2, angle)
             end
